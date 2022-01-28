@@ -49,6 +49,8 @@
     }
     .bg-motherboard-dev {
         background-image: url("../assets/img/publicbackgrounds/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -58,7 +60,9 @@
     }
 
     .bg-motherboard-dev {
-        background-image: url("../assets/img/publicbackgrounds/bg-motherboard.jpg");
+        background-image: url("../assets/img/publicbackgrounds/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
