@@ -2,7 +2,7 @@
 
 namespace Shared.Models
 {
-    internal class Category
+    public class Category
     {
         [Key] /*esto define que es la clave de mi sistema de BD*/
         public int CategoryID { get; set; } 
