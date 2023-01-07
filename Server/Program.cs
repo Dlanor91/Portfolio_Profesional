@@ -15,6 +15,25 @@ builder.Services.AddSwaggerGen(c =>
 });
 builder.Services.AddRouting(options=> options.LowercaseUrls = true);
 
+builder.Services.AddCors(options =>
+
+{
+
+    options.AddPolicy("CorsPolicy",
+
+        builder =>
+
+        builder
+
+        .AllowAnyOrigin()
+
+        .AllowAnyMethod()
+
+        .AllowAnyHeader()
+
+        );
+
+});
 
 builder.Services.AddControllers();
 
@@ -34,6 +53,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();   
 
 app.UseRouting();
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
