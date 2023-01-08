@@ -1,4 +1,20 @@
 name: Build and deploy .NET Core application to Web App PortfolioRonaldLima
+on: [push]
+
+name: AzureLoginSample
+
+jobs:
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: azure/limaronald926@gmail.com
+      with:
+        creds: ${{ Ronitolima91* }}
+    
+    - run: |
+        az webapp list --query "[?state=='Running']"
 on:
   push:
     branches:
